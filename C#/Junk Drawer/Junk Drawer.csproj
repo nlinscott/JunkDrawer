@@ -53,6 +53,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ActionService.cs" />
+    <Compile Include="Controls\BadIdeasControl.xaml.cs">
+      <DependentUpon>BadIdeasControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IdeaDescriptionControl.xaml.cs">
+      <DependentUpon>IdeaDescriptionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IBad.cs" />
+    <Compile Include="Interface\IMainWindowViewModel.cs" />
+    <Compile Include="Controls\LoginControl.xaml.cs">
+      <DependentUpon>LoginControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ISubmit.cs" />
+    <Compile Include="ViewModels\BadIdeasViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\SubmitViewModel.cs" />
+    <Compile Include="Windows\SubmitIdea.xaml.cs">
+      <DependentUpon>SubmitIdea.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\BadIdeasControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\IdeaDescriptionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LoginControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -61,10 +92,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Interface\Notifiable.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\SubmitIdea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,9 +131,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Styles\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\JunkDrawerModel\JunkDrawerModel.csproj">
       <Project>{b5aed711-0a87-4af6-8b70-63d02b3913fc}</Project>

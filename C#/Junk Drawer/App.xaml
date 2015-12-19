@@ -4,9 +4,11 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         
-        <Style x:Key="RoundButtonTemplate" TargetType="Button">
-                
+
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Setter Property="ListBoxItem.HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="ListBoxItem.Margin" Value="10"/>
         </Style>
-        
+
     </Application.Resources>
 </Application>

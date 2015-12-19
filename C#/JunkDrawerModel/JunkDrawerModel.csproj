@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,8 +46,10 @@
   <ItemGroup>
     <Compile Include="Constants\Handles.cs" />
     <Compile Include="Database\APIHandler.cs" />
+    <Compile Include="Interface\ICategory.cs" />
     <Compile Include="Interface\IIdea.cs" />
     <Compile Include="Interface\IJsonObject.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\IdeaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

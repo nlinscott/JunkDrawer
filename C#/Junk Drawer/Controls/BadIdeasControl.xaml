@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="Junk_Drawer.Controls.BadIdeasControl"
+             xmlns:controls="clr-namespace:Junk_Drawer.Controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ListBox Grid.Row="0" Grid.Column="0" ItemsSource="{Binding BadIdeas}" HorizontalContentAlignment="Stretch" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 SelectedItem="{Binding CurrentIdea, UpdateSourceTrigger=PropertyChanged}" SelectedIndex="0">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="90*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Column="0" Grid.Row="0">
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100*"/>
+                            </Grid.RowDefinitions>
+
+                            
+                            <TextBlock Grid.Row="0" Grid.Column="0" FontSize="25" Text="{Binding Path=IdeaName}" />
+                            
+                            <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal">
+                                <TextBlock FontSize="16" FontWeight="Bold"  Text="Expires on " />
+                                <TextBlock FontSize="16" FontWeight="Bold" Text="{Binding Path=Expiration}" />
+
+                            </StackPanel>
+                            
+                        </Grid>
+
+                        <controls:IdeaDescriptionControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                            <controls:IdeaDescriptionControl.Style>
+                                <Style>
+                                    <Setter Property="controls:IdeaDescriptionControl.Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                AncestorType={x:Type ListBoxItem}},
+                                                                Path=IsSelected}" Value="True">
+                                            <Setter Property="controls:IdeaDescriptionControl.Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </controls:IdeaDescriptionControl.Style>
+                        </controls:IdeaDescriptionControl>
+                        
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+
+        </ListBox>
+
+
+
+    </Grid>
+
+</UserControl>

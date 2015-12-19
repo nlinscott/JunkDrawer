@@ -45,33 +45,42 @@ $app->post('/create', function () use ($app) {
         $creater = new CreateIdea();
         $creater->create($idea_name, $description, $author, $category_id);
         
+        echo $idea_name;
+        
     }
 );
 
 $app->get('/goodIdeas', function(){
         
-        require_once("php/GetAll.php");
+        require_once("php/GetAllGoodIdeas.php");
     
-        $get = new GetAll();
+        $get = new GetAllGood();
     
-        echo $get->getAllIdeas(true);
+        echo $get->getAllGoodIdeas();
+    }
+);
+
+$app->get('/categories', function(){
+        
+        require_once("php/Categories.php");
     
+        $cat = new Categories();
+    
+        echo $cat->getAllCategories();
     }
 );
 
 $app->get('/badIdeas', function(){
     
-       
-        require_once("php/GetAll.php");
+        require_once("php/GetAllBadIdeas.php");
     
-        $get = new GetAll();
+        $get = new GetAllBad();
     
-        echo $get->getAllIdeas(false);
-    
+        echo $get->getAllBadIdeas();
     }
 );
 
-$app->post('/vote',function() use ($app){
+$app->post('/vote', function() use ($app){
     
     $number = $app->request->post('Number');
     $id = $app->request->post('ID');

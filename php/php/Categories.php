@@ -1,13 +1,13 @@
 <?php
 
 
-class GetAll{
+class Categories{
     
-    public function GetAll(){
+    public function Categories(){
         
     }
     
-    public function getAllIdeas($include_permanent){
+    public function getAllCategories(){
         
         require_once('config/config.php');
         
@@ -17,27 +17,13 @@ class GetAll{
             mysqli_close($con);            
         }
         
-        $perm = 1;
         
-        if(!$include_permanent){
-            $perm = 0;
-        }
         
         //gets a set number of existing months
-        $sql = "SELECT 
-                     i.description as Description,
-                     i.id as ID,
-                     i.votes as VoteCount,
-                     i.expires as Expiration,
-                     i.permanent as IsPermanent,
-                     i.IdeaName as IdeaName,
-                     c.category as Category
-
-                FROM `ideas` as i
-
-                INNER JOIN `categories` as c ON c.category_id = i.category_id
-
-                WHERE i.permanent = $perm";
+        $sql = "SELECT
+                    `category_id` as CategoryID,
+                    `category` as CategoryName
+                     FROM `categories`";
             
         
         //execute query

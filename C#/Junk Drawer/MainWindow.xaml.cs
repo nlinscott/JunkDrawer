@@ -4,6 +4,7 @@ using JunkDrawerModel.Models;
 using System.Collections.Generic;
 using System.Windows;
 using System.Linq;
+using Junk_Drawer.ViewModels;
 namespace Junk_Drawer
 {
     /// <summary>
@@ -14,6 +15,7 @@ namespace Junk_Drawer
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

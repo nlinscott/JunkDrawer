@@ -13,8 +13,6 @@ C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.exe
 C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.pdb
 C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\App.baml
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\Junk Drawer.exe.config
-C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.exe
-C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.pdb
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\Junk Drawer.exe
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\Junk Drawer.pdb
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\JunkDrawerModel.dll
@@ -22,11 +20,23 @@ C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\Newtonsoft.Json.dll
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\JunkDrawerModel.pdb
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\bin\Debug\Newtonsoft.Json.xml
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.csprojResolveAssemblyReference.cache
-C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\MainWindow.baml
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Controls\LoginControl.baml
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\App.baml
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Controls\LoginControl.g.cs
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\MainWindow.g.cs
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\App.g.cs
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer_MarkupCompile.cache
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer_MarkupCompile.lref
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\MainWindow.baml
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.g.resources
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk_Drawer.Properties.Resources.resources
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.csproj.GenerateResource.Cache
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.exe
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Junk Drawer.pdb
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Windows\SubmitIdea.baml
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Windows\SubmitIdea.g.cs
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Controls\BadIdeasControl.baml
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Controls\IdeaDescriptionControl.baml
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Controls\BadIdeasControl.g.cs
+C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\obj\Debug\Controls\IdeaDescriptionControl.g.cs
