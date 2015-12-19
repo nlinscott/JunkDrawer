@@ -21,7 +21,7 @@ class CreateIdea{
         $sql = "INSERT INTO `ideas`
                 (`ID`, `description`, `author`, `category_id`, `votes`, `expires`, `permanent`,`linked_to`) 
                 VALUES 
-                (NULL, '$description', '$author', $category_id, 0, NOW() + INTERVAL 1 DAY, 0, NULL)";
+                (NULL, '$description', '$author', $category_id, 0, NOW() + INTERVAL 2 DAY, 0, NULL)";
         
         //execute query
         $result = mysqli_query($con, $sql);

@@ -48,7 +48,7 @@ $app->post('/create', function () use ($app) {
     }
 );
 
-$app->get('/goodIdeas', function() use ($app){
+$app->get('/goodIdeas', function(){
         
         require_once("php/GetAll.php");
     
@@ -59,7 +59,7 @@ $app->get('/goodIdeas', function() use ($app){
     }
 );
 
-$app->get('/badIdeas', function() use ($app){
+$app->get('/badIdeas', function(){
     
        
         require_once("php/GetAll.php");
@@ -70,6 +70,18 @@ $app->get('/badIdeas', function() use ($app){
     
     }
 );
+
+$app->post('/vote',function() use ($app){
+    
+    $number = $app->request->post('Number');
+    $id = $app->request->post('ID');
+    
+    require_once("php/Vote.php");
+    
+    $voter = new Vote();
+    
+    $voter->castVote($number, $id);
+});
 
 
 /**

@@ -24,7 +24,20 @@ class GetAll{
         }
         
         //gets a set number of existing months
-        $sql = "SELECT * FROM `ideas` WHERE `permanent` = $perm";
+        $sql = "SELECT 
+                     i.description as Description,
+                     i.id as ID,
+                     i.votes as VoteCount,
+                     i.expires as Expiration,
+                     i.permanent as IsPermanent,
+                     i.IdeaName as IdeaName,
+                     c.category as Category
+
+                FROM `ideas` as i
+
+                INNER JOIN `categories` as c ON c.category_id = i.category_id
+
+                WHERE i.permanent = $perm";
             
         
         //execute query
