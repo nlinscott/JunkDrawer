@@ -1,0 +1,14 @@
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\bin\Debug\Junk Drawer.exe.config
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\bin\Debug\Junk Drawer.exe
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\bin\Debug\Junk Drawer.pdb
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\MainWindow.baml
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\MainWindow.g.cs
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\App.g.cs
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer_MarkupCompile.cache
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.g.resources
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk_Drawer.Properties.Resources.resources
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.csproj.GenerateResource.Cache
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.exe
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\Junk Drawer.pdb
+C:\Users\Ryan\Desktop\Junk Drawer\Junk Drawer\obj\Debug\App.baml
