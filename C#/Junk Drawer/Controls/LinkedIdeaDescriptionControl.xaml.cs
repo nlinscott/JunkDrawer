@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Junk_Drawer.Controls
 {
     /// <summary>
-    /// Interaction logic for IdeaDescriptionControl.xaml
+    /// Interaction logic for LinkedIdeaDescriptionControl.xaml
     /// </summary>
-    public partial class IdeaDescriptionControl : UserControl
+    public partial class LinkedIdeaDescriptionControl : UserControl
     {
-        public IdeaDescriptionControl()
+        public LinkedIdeaDescriptionControl()
         {
             InitializeComponent();
         }

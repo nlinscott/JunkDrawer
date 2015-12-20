@@ -11,7 +11,7 @@ namespace Junk_Drawer.Interface
             get;
         }
 
-        IIdea CurrentIdea
+        IBadIdea CurrentIdea
         {
             get;
             set;

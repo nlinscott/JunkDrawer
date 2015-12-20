@@ -17,8 +17,7 @@ class GetAllGood{
             mysqli_close($con);            
         }
         
-        
-        //gets a set number of existing months
+    
         $sql = "SELECT 
                      i.author as Author,
                      i.description as Description,
@@ -28,8 +27,8 @@ class GetAllGood{
                      i.links as Links,
                      c.category as Category
 
-                FROM `ideas` as i
-
+                FROM `ideas` as i,
+                
                 INNER JOIN `categories` as c ON c.category_id = i.category_id
 
                 WHERE i.permanent = 1";

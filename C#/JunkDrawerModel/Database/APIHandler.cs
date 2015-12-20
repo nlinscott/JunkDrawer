@@ -12,16 +12,16 @@ namespace JunkDrawerModel.Database
 {
     public class APIHandler
     {
-        public IEnumerable<IIdea> GetBadIdeaList()
+        public IEnumerable<IBadIdea> GetBadIdeaList()
         {
             string json = GetJSON(Handles.BAD_IDEA_URL);
 
-            return JsonConvert.DeserializeObject<List<IdeaModel>>(json);
+            return JsonConvert.DeserializeObject<List<BadIdeaModel>>(json);
         }
 
-        public bool CastVote(IIdea idea, int number)
+        public bool CastVote(int ID, int number)
         {
-            return PostVote(idea, number);
+            return PostVote(ID, number);
         }
 
         public IEnumerable<ICategory> GetAllCategories()
@@ -31,17 +31,26 @@ namespace JunkDrawerModel.Database
             return JsonConvert.DeserializeObject<List<CategoryModel>>(json);
         }
 
-        public IEnumerable<IIdea> GetGoodIdeaList()
+        public IEnumerable<IGoodIdea> GetGoodIdeaList()
         {
             string json = GetJSON(Handles.GOOD_IDEA_URL);
 
-            return JsonConvert.DeserializeObject<List<IdeaModel>>(json); 
+            return JsonConvert.DeserializeObject<List<GoodIdeaModel>>(json); 
+        }
+
+        public IEnumerable<IGoodIdea> GetIdeaByID(int id)
+        {
+            string json = GetJSON(Handles.GET_IDEA_URL + id);
+
+            return JsonConvert.DeserializeObject < List<GoodIdeaModel>>(json);
         }
 
         public bool CreateItem(string author, string ideaName, string description, int catID)
         {
             return PostNewItem(author, ideaName, description, catID);
         }
+
+        
 
         private bool PostNewItem(string author, string ideaName, string description, int catID)
         {
@@ -81,7 +90,7 @@ namespace JunkDrawerModel.Database
             return false;
         }
 
-        private bool PostVote(IIdea idea, int number)
+        private bool PostVote(int ID, int number)
         {
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Handles.VOTE_URL);
@@ -89,7 +98,7 @@ namespace JunkDrawerModel.Database
 
             System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
 
-            string data = string.Format("Number={0}&ID={1}",number, idea.ID);
+            string data = string.Format("Number={0}&ID={1}", number, ID);
 
             byte[] byteArray = encoding.GetBytes(data);
 

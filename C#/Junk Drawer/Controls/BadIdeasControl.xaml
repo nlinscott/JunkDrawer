@@ -57,20 +57,20 @@
                             
                         </Grid>
 
-                        <controls:IdeaDescriptionControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
-                            <controls:IdeaDescriptionControl.Style>
+                        <controls:BadIdeaDescriptionControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+                            <controls:BadIdeaDescriptionControl.Style>
                                 <Style>
-                                    <Setter Property="controls:IdeaDescriptionControl.Visibility" Value="Collapsed"/>
+                                    <Setter Property="controls:BadIdeaDescriptionControl.Visibility" Value="Collapsed"/>
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
                                                                 AncestorType={x:Type ListBoxItem}},
                                                                 Path=IsSelected}" Value="True">
-                                            <Setter Property="controls:IdeaDescriptionControl.Visibility" Value="Visible"/>
+                                            <Setter Property="controls:BadIdeaDescriptionControl.Visibility" Value="Visible"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
-                            </controls:IdeaDescriptionControl.Style>
-                        </controls:IdeaDescriptionControl>
+                            </controls:BadIdeaDescriptionControl.Style>
+                        </controls:BadIdeaDescriptionControl>
                         
                     </Grid>
                 </DataTemplate>

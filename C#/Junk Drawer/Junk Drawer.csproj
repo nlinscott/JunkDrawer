@@ -57,16 +57,27 @@
     <Compile Include="Controls\BadIdeasControl.xaml.cs">
       <DependentUpon>BadIdeasControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\IdeaDescriptionControl.xaml.cs">
-      <DependentUpon>IdeaDescriptionControl.xaml</DependentUpon>
+    <Compile Include="Controls\GoodIdeasControl.xaml.cs">
+      <DependentUpon>GoodIdeasControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BadIdeaDescriptionControl.xaml.cs">
+      <DependentUpon>BadIdeaDescriptionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GoodIdeaDescriptionControl.xaml.cs">
+      <DependentUpon>GoodIdeaDescriptionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LinkedIdeaDescriptionControl.xaml.cs">
+      <DependentUpon>LinkedIdeaDescriptionControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interface\IBad.cs" />
+    <Compile Include="Interface\IGood.cs" />
     <Compile Include="Interface\IMainWindowViewModel.cs" />
     <Compile Include="Controls\LoginControl.xaml.cs">
       <DependentUpon>LoginControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interface\ISubmit.cs" />
     <Compile Include="ViewModels\BadIdeasViewModel.cs" />
+    <Compile Include="ViewModels\GoodIdeasViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\SubmitViewModel.cs" />
     <Compile Include="Windows\SubmitIdea.xaml.cs">
@@ -76,7 +87,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\IdeaDescriptionControl.xaml">
+    <Page Include="Controls\GoodIdeasControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BadIdeaDescriptionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GoodIdeaDescriptionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LinkedIdeaDescriptionControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

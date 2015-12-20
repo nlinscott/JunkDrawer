@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\wamp\www\Github\JunkDrawer\C#\Junk Drawer\App.xaml
-558961332
+8544718922
 
-221428434639
+27-1067410216
 13-1995326735
-Controls\BadIdeasControl.xaml;Controls\IdeaDescriptionControl.xaml;Controls\LoginControl.xaml;MainWindow.xaml;Windows\SubmitIdea.xaml;
+Controls\BadIdeasControl.xaml;Controls\GoodIdeasControl.xaml;Controls\BadIdeaDescriptionControl.xaml;Controls\GoodIdeaDescriptionControl.xaml;Controls\LinkedIdeaDescriptionControl.xaml;Controls\LoginControl.xaml;MainWindow.xaml;Windows\SubmitIdea.xaml;
 
-True
+False
 

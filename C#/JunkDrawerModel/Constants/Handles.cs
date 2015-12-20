@@ -20,6 +20,8 @@ namespace JunkDrawerModel.Constants
 
         public const string CATEGORIES_URL = BASE_URL + "categories";
 
+        public const string GET_IDEA_URL =   BASE_URL + "idea/";
+
 
     }
 }

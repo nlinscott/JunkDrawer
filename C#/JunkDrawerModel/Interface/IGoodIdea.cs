@@ -6,39 +6,9 @@ using System.Threading.Tasks;
 
 namespace JunkDrawerModel.Interface
 {
-    public interface IIdea
+    public interface IGoodIdea
     {
-        string IdeaName
-        {
-            get;
-            set;
-        }
-
-        DateTime Expiration
-        {
-            get;
-            set;
-        }
-
-        int ID
-        {
-            get;
-            set;
-        }
-
-        string Category
-        {
-            get;
-            set;
-        }
-
         string Author
-        {
-            get;
-            set;
-        }
-
-        int VoteCount
         {
             get;
             set;
@@ -50,7 +20,31 @@ namespace JunkDrawerModel.Interface
             set;
         }
 
-        int IsPermanent
+        int ID
+        {
+            get;
+            set;
+        }
+
+        int VoteCount
+        {
+            get;
+            set;
+        }
+
+        string IdeaName
+        {
+            get;
+            set;
+        }
+
+        string Links
+        {
+            get;
+            set;
+        }
+
+        string Category
         {
             get;
             set;

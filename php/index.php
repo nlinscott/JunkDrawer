@@ -92,6 +92,16 @@ $app->post('/vote', function() use ($app){
     $voter->castVote($number, $id);
 });
 
+$app->get('/idea/:id', function($id){
+    
+    require_once("php/GetIdeaById.php");
+    
+    $getIdea = new GetIdea();
+    
+    echo $getIdea->getIdeabyID($id);
+    
+});
+
 
 /**
  * Step 4: Run the Slim application

@@ -5,7 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background="Aquamarine">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="clrPrimary" Color="#a6b827" />
+    </UserControl.Resources>
+    <Grid Background="{StaticResource clrPrimary}">
         
         
         <Grid.RowDefinitions>
@@ -21,8 +24,9 @@
             <ColumnDefinition Width="33*"/>
         </Grid.ColumnDefinitions>
         
-        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Background="White">
-            <StackPanel Orientation="Horizontal" >
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1"
+                    Grid.RowSpan="2" Background="White">
+            <StackPanel Orientation="Horizontal"  VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Label Content="Anonymous?" VerticalAlignment="Center"/>
                 <CheckBox VerticalAlignment="Center" IsChecked="{Binding IsAnonymous, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>

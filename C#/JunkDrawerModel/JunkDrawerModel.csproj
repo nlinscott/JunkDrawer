@@ -47,10 +47,12 @@
     <Compile Include="Constants\Handles.cs" />
     <Compile Include="Database\APIHandler.cs" />
     <Compile Include="Interface\ICategory.cs" />
-    <Compile Include="Interface\IIdea.cs" />
+    <Compile Include="Interface\IBadIdea.cs" />
+    <Compile Include="Interface\IGoodIdea.cs" />
     <Compile Include="Interface\IJsonObject.cs" />
     <Compile Include="Models\CategoryModel.cs" />
-    <Compile Include="Models\IdeaModel.cs" />
+    <Compile Include="Models\GoodIdeaModel.cs" />
+    <Compile Include="Models\BadIdeaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

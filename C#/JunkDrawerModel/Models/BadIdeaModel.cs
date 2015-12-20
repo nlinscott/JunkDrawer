@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace JunkDrawerModel.Models
 {
     [JsonObject(MemberSerialization.OptIn)]
-    public class IdeaModel : IIdea, IJsonObject<IIdea>
+    public class BadIdeaModel : IBadIdea, IJsonObject<IBadIdea>
     {
         private int _id;
         private string _author;
@@ -20,12 +20,12 @@ namespace JunkDrawerModel.Models
         private string _ideaName;
 
         [JsonConstructor]
-        public IdeaModel()
+        public BadIdeaModel()
         {
         }
 
 
-        private void initialize(IIdea idea)
+        private void initialize(IBadIdea idea)
         {
             this._id = idea.ID;
             this._author = idea.Author;
@@ -138,9 +138,9 @@ namespace JunkDrawerModel.Models
             return JsonConvert.SerializeObject(this);
         }
 
-        private IIdea convertFromJSON(string ideaJson)
+        private IBadIdea convertFromJSON(string ideaJson)
         {
-           return JsonConvert.DeserializeObject<IIdea>(ideaJson);
+           return JsonConvert.DeserializeObject<IBadIdea>(ideaJson);
         }
     }
 }

@@ -9,13 +9,14 @@ using System.Linq;
 using System.Windows.Data;
 using System.Windows.Input;
 
+
 namespace Junk_Drawer.ViewModels
 {
     public class BadIdeasViewModel : Notifiable, IBad
     {
-        private readonly ObservableCollection<IIdea> _ideaList = new ObservableCollection<IIdea>();
+        private readonly ObservableCollection<IBadIdea> _ideaList = new ObservableCollection<IBadIdea>();
 
-        private IIdea _currentIdea;
+        private IBadIdea _currentIdea;
         private Command _voteUpCommand;
         private Command _voteDownCommand;
         private readonly APIHandler _handler = new APIHandler();
@@ -42,8 +43,8 @@ namespace Junk_Drawer.ViewModels
         {
             _ideaList.Clear();
 
-            IEnumerable<IIdea> ideas = _handler.GetBadIdeaList();
-            foreach (IIdea idea in ideas)
+            IEnumerable<IBadIdea> ideas = _handler.GetBadIdeaList();
+            foreach (IBadIdea idea in ideas)
             {
                 _ideaList.Add(idea);
             }
@@ -52,7 +53,7 @@ namespace Junk_Drawer.ViewModels
 
         private void ExecuteVoteUpCommand(object obj)
         {
-            _handler.CastVote(CurrentIdea, 1);
+            _handler.CastVote(CurrentIdea.ID, 1);
 
             Votes = Votes + 1;
             _currentIdea.VoteCount = Votes;
@@ -61,7 +62,7 @@ namespace Junk_Drawer.ViewModels
 
         private void ExecuteVoteDownCommand(object obj)
         {
-            _handler.CastVote(CurrentIdea, -1);
+            _handler.CastVote(CurrentIdea.ID, -1);
 
             Votes = Votes - 1;
             _currentIdea.VoteCount = Votes;
@@ -77,7 +78,7 @@ namespace Junk_Drawer.ViewModels
             }
         }
 
-        public IIdea CurrentIdea
+        public IBadIdea CurrentIdea
         {
             get
             {

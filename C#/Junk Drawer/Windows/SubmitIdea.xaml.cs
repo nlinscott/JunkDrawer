@@ -44,6 +44,7 @@ namespace Junk_Drawer.Windows
                 {
                     ActionService service = ActionService.GetInstance();
                     service.PerformAction(typeof(BadIdeasViewModel));
+                    service.PerformAction(typeof(GoodIdeasViewModel));
                     
                     this.Close();
                 }

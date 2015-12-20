@@ -2,6 +2,6 @@ C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\bin\Debug\JunkDrawerModel.dll
 C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\bin\Debug\JunkDrawerModel.pdb
 C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\bin\Debug\Newtonsoft.Json.dll
 C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\bin\Debug\Newtonsoft.Json.xml
+C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\obj\Debug\JunkDrawerModel.csprojResolveAssemblyReference.cache
 C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\obj\Debug\JunkDrawerModel.dll
 C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\obj\Debug\JunkDrawerModel.pdb
-C:\wamp\www\Github\JunkDrawer\C#\JunkDrawerModel\obj\Debug\JunkDrawerModel.csprojResolveAssemblyReference.cache
