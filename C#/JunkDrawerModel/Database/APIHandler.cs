@@ -10,6 +10,13 @@ using System.Web;
 
 namespace JunkDrawerModel.Database
 {
+    /// <summary>
+    /// TODO: Modify GoodIdeaModel to have an IEnumerable<IIdea> for the links
+    /// TODO: Rework the API to have the Good ideas come in with an array of all Links
+    /// TODO: Make a Viewmodel wrapper of GoodIdeaModel and Implement INotifyPropertyChanged
+    /// TODO: Abstract common properties of Good/Bad ideas into one interface 
+    /// TODO: Rework GoodIdeaViewModel
+    /// </summary>
     public class APIHandler
     {
         public IEnumerable<IBadIdea> GetBadIdeaList()
